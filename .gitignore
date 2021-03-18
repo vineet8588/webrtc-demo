@@ -3,3 +3,8 @@ node_modules
 dist
 dist-ssr
 *.local
+
+.firebaserc
+firestore.rules
+firestore.indexes.json
+firebase.json
