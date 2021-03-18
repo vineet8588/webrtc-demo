@@ -8,3 +8,6 @@ dist-ssr
 firestore.rules
 firestore.indexes.json
 firebase.json
+
+*.log
+.firebase
