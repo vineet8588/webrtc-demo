@@ -43,7 +43,6 @@ let remoteStream = null;
 let globalCallId = null;
 
 // HTML elements
-const webcamButton = document.getElementById('webcamButton');
 const webcamVideo = document.getElementById('webcamVideo');
 const callButton = document.getElementById('callButton');
 const callInput = document.getElementById('callInput');
@@ -54,7 +53,7 @@ const hangupButton = document.getElementById('hangupButton');
 
 
 // 1. Setup media sources
-webcamButton.onclick = async () => {
+const startWebcam = async () => {
   localStream = await navigator.mediaDevices.getUserMedia({video: true, audio: true});
   remoteStream = new MediaStream();
 
@@ -74,11 +73,10 @@ webcamButton.onclick = async () => {
   webcamVideo.muted = true;
   remoteVideo.srcObject = remoteStream;
   callButton.disabled = false;
-  webcamButton.disabled = true;
   answerButton.disabled = false;
 }
 
-
+startWebcam()
 
 //  2. Create an offer
 callButton.onclick = async () =>{

@@ -6,7 +6,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #fcdab7;
-  margin: 20px 10px;
+  margin: 0px 10px;
   background-color: #1d2d50;
 }
 
@@ -32,17 +32,46 @@ button[disabled]{
 }
 
 video {
-  width: 40vw;
-  height: 30vw;
-  margin: 2rem;
   background: #2c3e50;
   transform: rotateY(180deg);
   -webkit-transform:rotateY(180deg); /* Safari and Chrome */
   -moz-transform:rotateY(180deg); /* Firefox */
 }
 
+#webcamVideo {
+  width: auto;
+  max-width: 90vw;
+  height: 20vh;
+}
+
+#remoteVideo{
+  width: 90vw;
+  height: 60vh;
+}
+
+@media (min-width: 576px) {
+  .videos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row !important;
+  }
+  #webcamVideo, #remoteVideo{
+    width: 40vw;
+    height: 30vw;
+    margin: 0rem 2rem;
+  }
+}
+
 .videos {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column-reverse;
 }
+
+input{
+  padding: 10px 0px;
+  margin: 5px;
+}
+
