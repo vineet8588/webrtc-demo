@@ -6,13 +6,7 @@ import "firebase/firestore";
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyB0JCWsoLtOC9x-wgcBBsoylgBDVNs0kRQ",
-  authDomain: "webrtc-demo-73dea.firebaseapp.com",
-  projectId: "webrtc-demo-73dea",
-  storageBucket: "webrtc-demo-73dea.appspot.com",
-  messagingSenderId: "835758690976",
-  appId: "1:835758690976:web:2bc5126a79b177bb7c2fc5",
-  measurementId: "G-0R0HNHEX0L"
+  // Your firebase config here
 };
 
 // firebase.apps.length = No. of firebase apps connected.
